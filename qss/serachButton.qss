@@ -1,0 +1,29 @@
+	/*正常状态样式*/
+	
+	QPushButton{
+	background-color:rgba(100,225,100,50%); /*背景色（也可以设置图片）第四个参数为透明度*/
+	border-style:outset;                    /*边框样式（inset/outset）*/
+	border-width:4px;                       /*边框宽度像素*/
+	border-radius:10px;                     /*边框圆角半径像素*/
+	border-color:rgba(255,255,255);         /*边框颜色*/
+	font:bold 15px;                         /*字体字体大小*/
+	color:rgba(0,0,0,100);                  /*字体颜色*/
+	padding:6px;          					/*填衬*/
+	}
+	
+	/*鼠标按下样式*/
+	QPushButton:pressed{
+	background-color:rgba(176,143,155,100);
+	border-color:rgba(255,255,255,50%);
+	border-style:inset;
+	color:rgba(161,41,105,100);
+	
+	}
+	
+	/*鼠标悬停样式*/
+	
+	QPushButton:hover:!pressed{
+	background-color:rgba(100,255,100,50%);
+	border-color:rgba(255,255,255,80%);
+	color:rgba(0,0,0,80%);
+	}
