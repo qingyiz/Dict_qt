@@ -170,7 +170,7 @@ void Widget::paintEvent(QPaintEvent *)
     //p.drawxxx();
     //画背景图
     //p.drawPixmap(0, 0, width(), height(), QPixmap("../Image/bk.png"));
-    p.drawPixmap(rect(), QPixmap(":./image/2000973.jpg"));
+    p.drawPixmap(rect(), QPixmap("../Dict_qt/image/2000973.jpg"));
 }
 
 //设置按钮样式
@@ -178,7 +178,7 @@ void Widget::setSysleSheetButton()
 {
     QString styleSheet;
     //这是在Qt的资源下的文件,可以不用在资源下
-    QFile file1(":/qss/serachButton.qss");
+    QFile file1("../Dict_qt/qss/serachButton.qss");
     //只读方式打开文件
     file1.open(QFile::ReadOnly);
     //读取文件的所有内容，并转换成QString类型
@@ -186,7 +186,7 @@ void Widget::setSysleSheetButton()
     //设置样式表
     ui->searchButton->setStyleSheet(styleSheet);
 
-    QFile file2(":/qss/statusButton.qss");
+    QFile file2("../Dict_qt/qss/statusButton.qss");
     file2.open(QFile::ReadOnly);
     styleSheet = QString(file2.readAll());
     ui->closeButton->setStyleSheet(styleSheet);
@@ -198,7 +198,7 @@ void Widget::setSysleSheetButton()
 //设置输入框样式
 void Widget::setSysleSheetEdit()
 {
-    QFile file(":/qss/serachEdit.qss");
+    QFile file("../Dict_qt/qss/serachEdit.qss");
     file.open(QFile::ReadOnly);
     //读取文件的所有内容，并转换成QString类型
     QString styleSheet = QString(file.readAll());
@@ -207,7 +207,7 @@ void Widget::setSysleSheetEdit()
 
 void Widget::setsetSysleSheetBox()
 {
-    QFile file(":/qss/groupBox.qss");
+    QFile file("../Dict_qt/qss/groupBox.qss");
     file.open(QFile::ReadOnly);
     //读取文件的所有内容，并转换成QString类型
     QString styleSheet = QString(file.readAll());
