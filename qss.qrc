@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/">
+        <file>qss/serachButton.qss</file>
+        <file>qss/serachEdit.qss</file>
+        <file>qss/statusButton.qss</file>
+        <file>qss/groupBox.qss</file>
+    </qresource>
+</RCC>
